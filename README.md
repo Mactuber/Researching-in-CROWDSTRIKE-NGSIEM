@@ -8,6 +8,7 @@ Este repositorio contiene una colección de consultas (queries) optimizadas para
 
 ```kusto
 1. Control de Conexiones en Puertos Críticos
+
 Identifica IPs remotas que intentan establecer conexiones a través de protocolos comunes de administración o navegación. Útil para detectar movimientos laterales.
 // Revisión de IPs conectadas por HTTP, SSH o RDP
 ComputerName = "XXXXXX" 
