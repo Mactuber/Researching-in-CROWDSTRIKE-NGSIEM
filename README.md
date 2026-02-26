@@ -115,6 +115,7 @@ Webshell Activity
 ● ParentImageFileName=w3wp.exe (FileName=cmd.exe OR FileName=powershell.exe)
 ● ParentImageFileName=httpd.exe (FileName=cmd.exe OR FileName=powershell.exe)
 ● ParentImageFileName=w3wp.exe AND (FileName=cmd.exe OR FileName=powershell.exe OR FileName=whoami.exe OR FileName=netstat.exe OR FileName=ipconfig.exe)
+
 WMI Process Creation & Activity
 ● FileName=wmic.exe AND CommandLine=*create*
 ● CommandLine="*wmic /node:*"
