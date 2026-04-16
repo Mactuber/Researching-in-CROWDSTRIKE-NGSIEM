@@ -337,6 +337,6 @@ Lsass Running Outside System32
 
 Unauthorized Packet Sniffer Usage Detected
 
-#event_simpleName=ProcessRollup2
+● #event_simpleName=ProcessRollup2
 | Filename=/wireshark/i OR Filename=/tshark/i OR Filename=/tcpdump/i OR Filename=/ettercap/i OR Filename=/dumpcat/i OR Filename=/snort/i
 | select ([@timestamp, ComputerName, FileName, SourceFileName, CommandLine, ParentBaseFilename])
