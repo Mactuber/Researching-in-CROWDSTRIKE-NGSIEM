@@ -335,3 +335,8 @@ Svchost Running Outside Of System32
 Lsass Running Outside System32
 ● NOT ImageFileName="*\\Windows\\System32\\lsass.exe" AND ImageFileName="*lsass.exe"
 
+Unauthorized Packet Sniffer Usage Detected
+
+#event_simpleName=ProcessRollup2
+| Filename=/wireshark/i OR Filename=/tshark/i OR Filename=/tcpdump/i OR Filename=/ettercap/i OR Filename=/dumpcat/i OR Filename=/snort/i
+| select ([@timestamp, ComputerName, FileName, SourceFileName, CommandLine, ParentBaseFilename])
